@@ -24,6 +24,7 @@ module Debug.Trace.LocationTH
     , checkTraceIO
     ) where
 
+import Prelude hiding ((<>))
 import qualified Control.Exception as C
 import Control.Exception (throw, AssertionFailed(..))
 import Language.Haskell.TH.Ppr (pprint)
